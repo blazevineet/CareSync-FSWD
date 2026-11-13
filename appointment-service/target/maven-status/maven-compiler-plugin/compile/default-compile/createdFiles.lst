@@ -1,0 +1,5 @@
+com\caresync\appointmentservice\AppointmentService.class
+com\caresync\appointmentservice\AppointmentServiceApplication.class
+com\caresync\appointmentservice\AppointmentController.class
+com\caresync\appointmentservice\Appointment.class
+com\caresync\appointmentservice\AppointmentRepository.class

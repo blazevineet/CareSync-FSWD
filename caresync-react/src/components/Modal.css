@@ -1,0 +1,90 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-box {
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-box h2 {
+    margin-bottom: 20px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-content input, .modal-content select, .modal-content textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.modal-content button {
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    .modal-box {
+        width: 95%;
+        padding: 25px;
+    }
+}
+
+.modal-content .form-message {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 10px 12px;
+    border-radius: 7px;
+}
+
+.modal-content .form-message.success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.modal-content .form-message.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.modal-content button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
